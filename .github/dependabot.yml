@@ -1,0 +1,20 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: tenacity
+    versions:
+    - 6.3.1
+  - dependency-name: nbclient
+    versions:
+    - 0.5.1
+  - dependency-name: apispec
+    versions:
+    - 4.0.0
+  - dependency-name: httplib2
+    versions:
+    - 0.18.0
